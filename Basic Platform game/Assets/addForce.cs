@@ -25,6 +25,7 @@ public class addForce : MonoBehaviour {
 		{
 			jumpCount = 1;
 			isGrounded = true;
+
 		} 
 		
 		if (collision.gameObject.tag == "death")
