@@ -5,10 +5,15 @@ public class Timer : MonoBehaviour {
 	public float timeRemaining = 10;
 
 
-	void Start () {
+	void Start () 
+	{
 	
 	}
-	
+
+	void OnCollisionEnter(Collision collision)
+	{
+
+	}
 
 	void Update () {
 		timeRemaining -= Time.deltaTime;
