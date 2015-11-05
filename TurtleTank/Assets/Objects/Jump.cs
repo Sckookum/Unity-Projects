@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Jump : MonoBehaviour {
-	public bool collision;
+	public bool collision = false;
 	public Rigidbody body;
 	public float jumpHeight = 0;
 	// Use this for initialization
@@ -14,18 +14,15 @@ public class Jump : MonoBehaviour {
 	void Update () {
 		if (collision = true && Input.GetMouseButtonDown(0))
 		{
-			body.AddForce(transform.up * jumpHeight);
+			transform.Translate(0,3,0);
 		}
+
 	}
 	void OnCollisionEnter(Collision collide)
 	{
 		if (collide.gameObject.tag == "Cursor")
 		{
 			collision = true;
-		}
-		else
-		{
-			collision = false;
 		}
 	}
 }
