@@ -12,17 +12,11 @@ public class Jump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (collision = true && Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0))
 		{
 			transform.Translate(0,3,0);
 		}
 
 	}
-	void OnCollisionEnter(Collision collide)
-	{
-		if (collide.gameObject.tag == "Cursor")
-		{
-			collision = true;
-		}
-	}
+
 }
