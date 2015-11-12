@@ -24,19 +24,17 @@ public class ClckRespo : MonoBehaviour {
 		mouseWorldPoint = Camera.main.ScreenToWorldPoint(mouseWorldPoint);
 		transform.position = mouseWorldPoint;
 	}
-	void onTriggerEnter (Collider enemy)
-	{
-		if (enemy.tag == "enemy")
-		{
-			enemy.transform.Translate(Vector3.up * 3);
-		}
-	}
+	//Cursor.attachedRigidbody - this could be used as a test condition.
 	void OnTriggerStay (Collider Cursor)
 	{
-
-		if (Cursor.attachedRigidbody && Cursor.tag == "Player") 
+		if (Cursor.tag == "Player" && Input.GetMouseButton(0)) 
 		{
-			Cursor.attachedRigidbody.AddForce(Vector3.up * jumpForce);
+		
+			Cursor.attachedRigidbody.velocity = (Vector3.up * jumpForce);
+		}
+		if (Cursor.tag == "enemy" && Input.GetMouseButton(0)) 
+		{
+			Destroy (Cursor.gameObject);
 		}
 	}
 }

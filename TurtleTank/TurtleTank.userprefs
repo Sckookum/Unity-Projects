@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GUI/healthBlender.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Tank.cs">
     <Files>
-      <File FileName="Assets/GUI/healthBlender.cs" Line="35" Column="33" />
-      <File FileName="Assets/Objects/ClckRespo.cs" Line="31" Column="46" />
-      <File FileName="Assets/Objects/Jump.cs" Line="15" Column="7" />
+      <File FileName="Assets\Objects\ClckRespo.cs" Line="33" Column="1" />
+      <File FileName="Assets\Objects\EnemyBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Tank.cs" Line="25" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
