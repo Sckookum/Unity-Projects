@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Tank : MonoBehaviour {
-	public bool grounded = false;
+	public bool grounded;
 	// Use this for initialization
 	void Start () {
 	
@@ -10,14 +10,15 @@ public class Tank : MonoBehaviour {
 
 	void OnCollisionEnter(Collision ground)
 	{
-		if (ground.gameObject.tag == "Ground")
-		{
-			grounded = true;
-		}
 		if (ground.gameObject.tag == "Spike")
 		{
 			Application.LoadLevel (0);
 		}
+		if (ground.gameObject.tag == "Ground")
+		{
+			grounded = true;
+		}
+
 		else{ grounded = false;}
 	}
 	// Update is called once per frame
