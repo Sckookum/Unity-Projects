@@ -12,10 +12,14 @@ public class ChangeMusic : MonoBehaviour {
 	// Update is called once per frame
 	void OnLevelWasLoaded (int level)
 	{
-		if (level == 2)
+		if (level == 2 || level == 1 || level == 3)
 		{
 			source.clip = level2Music;
 			source.Play ();
+		}
+		if (level == 0)
+		{
+			source.Stop ();
 		}
 	}
 }
