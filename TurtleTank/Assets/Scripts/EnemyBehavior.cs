@@ -8,6 +8,7 @@ public class EnemyBehavior : MonoBehaviour {
 	public Rigidbody rig;
 	public float spawnDistance;
 	public float enemySpeed;
+	public float enemyAlt;
 
 	void Start () 
 	{
@@ -28,7 +29,7 @@ public class EnemyBehavior : MonoBehaviour {
 	void SpawnPoint ()
 	{
 		enemyspawnPoint.x = Camera.main.transform.position.x + spawnDistance;
-		enemyspawnPoint.y = Camera.main.transform.position.y;
+		enemyspawnPoint.y = Camera.main.transform.position.y + enemyAlt;
 		transform.position = enemyspawnPoint;
 	}
 }

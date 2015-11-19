@@ -47,14 +47,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GUI\healthBlender.cs" />
-     <Compile Include="Assets\Scripts\ChangeMusic.cs" />
      <Compile Include="Assets\Scripts\ClckRespo.cs" />
-     <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
      <Compile Include="Assets\Scripts\EnemySpawn.cs" />
-     <Compile Include="Assets\Scripts\LoadAdditive.cs" />
-     <Compile Include="Assets\Scripts\LoadMainMusic.cs" />
-     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\ChangeMusic.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\LoadAdditive.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\LoadMainMusic.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\LoadOnClick.cs" />
      <Compile Include="Assets\Scripts\Scrolling_Background.cs" />
      <Compile Include="Assets\Scripts\StopEnemy.cs" />
      <Compile Include="Assets\Scripts\Tank.cs" />
