@@ -20,7 +20,7 @@ public class ClckRespo : MonoBehaviour {
 	void Dragging() 
 	{
 		Vector3 mouseWorldPoint = Input.mousePosition;
-		mouseWorldPoint.z = 27f;
+		mouseWorldPoint.z = Camera.main.transform.position.z * -1;
 		mouseWorldPoint = Camera.main.ScreenToWorldPoint(mouseWorldPoint);
 		transform.position = mouseWorldPoint;
 	}

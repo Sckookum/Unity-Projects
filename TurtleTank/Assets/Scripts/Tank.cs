@@ -5,7 +5,7 @@ public class Tank : MonoBehaviour {
 	public bool grounded;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 
 	void OnCollisionEnter(Collision ground)
@@ -22,7 +22,4 @@ public class Tank : MonoBehaviour {
 		else{ grounded = false;}
 	}
 	// Update is called once per frame
-	void Update () {
-	
-	}
 }
