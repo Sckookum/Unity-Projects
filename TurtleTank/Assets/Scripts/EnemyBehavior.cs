@@ -9,6 +9,8 @@ public class EnemyBehavior : MonoBehaviour {
 	public float spawnDistance;
 	public float enemySpeed;
 	public float enemyAlt;
+	public float enemyHealth;
+	public float EnemyDefense;
 
 	void Start () 
 	{
@@ -23,13 +25,14 @@ public class EnemyBehavior : MonoBehaviour {
 	 if(point.tag == "Cursor")
 		{
 			DestroyObject(gameObject);
+
 		}
 	}
 
 	void SpawnPoint ()
 	{
 		enemyspawnPoint.x = Camera.main.transform.position.x + spawnDistance;
-		enemyspawnPoint.y = Camera.main.transform.position.y + enemyAlt;
+		enemyspawnPoint.y = Camera.main.transform.position.y - enemyAlt;
 		transform.position = enemyspawnPoint;
 	}
 }
